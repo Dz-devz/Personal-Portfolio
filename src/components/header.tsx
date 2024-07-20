@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
-import dzdev from "../assets/dzdev.svg";
+import dzdevwhite from "../assets/dzdevwhite.svg";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { navigation } from "../constants";
 import Button from "./button";
@@ -13,6 +13,8 @@ function Header() {
   const [openNavigation, setOpenNavigation] = useState(false);
 
   const handleClick = () => {
+    if (!openNavigation) return;
+
     enablePageScroll();
     setOpenNavigation(false);
   };
@@ -25,13 +27,18 @@ function Header() {
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="block w-[12rem] xl:mr-8" href="#">
-          <img src={dzdev} width={70} height={20} alt="Brainwave" />
+          <img
+            src={dzdevwhite}
+            width={100}
+            height={20}
+            alt="dzdev logo white"
+          />
         </a>
 
         <nav
           className={`${
             openNavigation ? "flex" : "hidden"
-          } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
+          } fixed top-[5rem] mt-10 left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
             {navigation.map((nav) => (
@@ -39,7 +46,7 @@ function Header() {
                 key={nav.id}
                 href={nav.url}
                 onClick={handleClick}
-                className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+                className={`block relative font-code text-2xl mt-19 uppercase text-n-1 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
                   nav.url === pathName.hash
                     ? "z-2 lg:text-n-1"
                     : "lg:text-n-1/50"
