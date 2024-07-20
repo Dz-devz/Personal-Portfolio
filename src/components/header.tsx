@@ -1,4 +1,5 @@
 import dzdev from "../assets/dzdev.svg";
+import { navigation } from "../constants";
 
 function Header() {
   return (
@@ -7,6 +8,19 @@ function Header() {
         <a className="block w-[12rem] xl:mr-8" href="#hero">
           <img src={dzdev} width={190} height={40} />
         </a>
+        <nav className=" hidden fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent">
+          <div className="relative z-2 flex flex-col items-center justify-center m-uto lg:flex-row">
+            {navigation.map((nav) => (
+              <a
+                key={nav.id}
+                href={nav.url}
+                className={`block relative font-code text-2xl uppeercase text-n-1 trnsition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold`}
+              >
+                {nav.title}
+              </a>
+            ))}
+          </div>
+        </nav>
       </div>
     </div>
   );
