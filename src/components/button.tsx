@@ -12,6 +12,7 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({
   className,
   href,
+  onClick,
   px,
   white,
   children,
@@ -23,7 +24,7 @@ const Button: React.FC<ButtonProps> = ({
   const spanClasses = "relative z-10";
 
   const renderButton = () => (
-    <button className={classes}>
+    <button className={classes} onClick={onClick}>
       <span className={spanClasses}>{children}</span>
       {ButtonSvg(white)}
     </button>
