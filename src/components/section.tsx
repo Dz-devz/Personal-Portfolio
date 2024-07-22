@@ -1,3 +1,5 @@
+import SectionSvg from "../assets/svg/Section";
+
 export default function Section({
   className,
   id,
@@ -27,6 +29,7 @@ export default function Section({
               crossesOffset && crossesOffset
             }pointer-events-none lg:block xl:left-10 right-10`}
           />
+          <SectionSvg crossesOffset={crossesOffset} />
         </>
       )}
     </div>
