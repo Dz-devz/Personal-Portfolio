@@ -5,11 +5,18 @@ export default function Hero() {
     <Section
       className="pt-[12rem] -mt-[5.25]"
       crosses
-      crossesOffset="lg:transparent-y-[5.25rem]"
+      crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
       id="hero"
     >
-      Hero
+      <div className="container relative">
+        <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem]">
+          <h1 className="h1 mb-6">
+            Enjoy exploring and discover the passion and drive behind each
+            project.
+          </h1>
+        </div>
+      </div>
     </Section>
   );
 }
