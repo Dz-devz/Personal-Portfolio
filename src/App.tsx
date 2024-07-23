@@ -1,6 +1,7 @@
 import "./App.css";
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import Header from "./components/header";
+import Hero from "./components/hero";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <div className="pt-[4.7rem] lg:pt-[5.25rem] overflow-hidden">
         <Header />
       </div>
+      <Hero />
       <ButtonGradient />
     </>
   );
