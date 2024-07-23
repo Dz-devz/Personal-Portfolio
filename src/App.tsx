@@ -8,8 +8,8 @@ export default function App() {
     <>
       <div className="pt-[4.7rem] lg:pt-[5.25rem] overflow-hidden">
         <Header />
+        <Hero />
       </div>
-      <Hero />
       <ButtonGradient />
     </>
   );
