@@ -1,6 +1,7 @@
 import Button from "./button";
 import Section from "./section";
 import DzDP from "../assets/DzDP.jpg";
+import DzShadow from "../assets/DzShadow.jpg";
 
 export default function Hero() {
   return (
@@ -33,6 +34,15 @@ export default function Hero() {
                 />
               </div>
             </div>
+          </div>
+          <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
+            <img
+              src={DzShadow}
+              className="w-full"
+              width={1440}
+              height={1800}
+              alt="Display Picture Shadow"
+            />
           </div>
         </div>
       </div>
