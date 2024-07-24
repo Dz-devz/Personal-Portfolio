@@ -1,3 +1,4 @@
+import Button from "./button";
 import Section from "./section";
 
 export default function Hero() {
@@ -15,6 +16,7 @@ export default function Hero() {
             Enjoy exploring and discover the passion and drive behind each
             project.
           </h1>
+          <Button href="/projects">Explore now</Button>
         </div>
       </div>
     </Section>
