@@ -1,7 +1,7 @@
+// import DzDPTwo from "../assets/DzDPTwo.jpg";
+import DzShadow from "../assets/DzShadow.jpg";
 import Button from "./button";
 import Section from "./section";
-import DzDP from "../assets/DzDP.jpg";
-import DzShadow from "../assets/DzShadow.jpg";
 
 export default function Hero() {
   return (
@@ -9,7 +9,7 @@ export default function Hero() {
       className="pt-[12rem] -mt-[5.25]"
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
-      customPaddings
+      customPaddings=""
       id="hero"
     >
       <div className="container relative">
@@ -21,17 +21,17 @@ export default function Hero() {
           <Button href="/projects">Explore now</Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
-          <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
-            <div className="relative bg-n-8 rounded-[1rem]">
-              <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
+          <div className="relative z-1 p-0.5 rounded-2xl">
+            <div className="relative bg-transparent rounded-[1rem]">
+              <div className="h-[1.4rem] bg-transparent rounded-t-[0.9rem]" />
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
-                <img
-                  src={DzDP}
+                {/* <img
+                  src={DzDPTwo}
                   className="w-full"
                   width={1440}
                   height={1800}
                   alt="Display Picture of Dz dev"
-                />
+                /> */}
               </div>
             </div>
           </div>
