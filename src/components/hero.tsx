@@ -6,7 +6,7 @@ import Section from "./section";
 export default function Hero() {
   return (
     <Section
-      className="pt-[12rem] -mt-[5.25]"
+      className="pt-[12rem] -mt-[5.25rem]"
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings=""
@@ -38,7 +38,7 @@ export default function Hero() {
           <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <img
               src={DzShadow}
-              className="w-full"
+              className="w-full opacity-[0.4]"
               width={1440}
               height={1800}
               alt="Display Picture Shadow"
