@@ -332,7 +332,7 @@ export const thumbnails = [
     title: "Smart Ticket",
     desc: "Blockchain based ticket authentication and verification system",
     thumbnail: smartTicketThumbnail,
-    github: "https://github.com/Dz-devz/smart-ticket",
+    link: "https://smartchain-ticket.vercel.app/",
     tools: {
       javascript: javascript,
       typescript: typescript,
