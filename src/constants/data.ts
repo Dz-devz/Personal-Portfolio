@@ -17,6 +17,7 @@ import honojs from "@/assets/honojs.png";
 import invoiceprogif from "@/assets/invoiceprothumbnail.gif";
 import jabuoieathumbnail from "@/assets/jabuoieathumbnail.gif";
 import javascript from "@/assets/javascript.png";
+import nestjs from "@/assets/nestjs.png";
 import nextjs from "@/assets/nextjs.png";
 import nodejs from "@/assets/nodejs.png";
 import paymongoapithumbnail from "@/assets/paymongoapithumbnail.gif";
@@ -25,6 +26,7 @@ import paymongothumbnail from "@/assets/paymongothumbnail.gif";
 import postgresql from "@/assets/postgresql.png";
 import prisma from "@/assets/prisma.png";
 import reactjs from "@/assets/reactjs.png";
+import smartTicketThumbnail from "@/assets/smartTicketThumbnail.gif";
 import swagger from "@/assets/swagger.png";
 import tailwind from "@/assets/tailwind.png";
 import taskapigif from "@/assets/taskapigif.gif";
@@ -35,7 +37,9 @@ import tolstich from "@/assets/Testimonial/tolstich.png";
 import tolstichThumbnail from "@/assets/tolstichstudioThumbnail.gif";
 import tracknstock from "@/assets/tracknstock.gif";
 import typescript from "@/assets/typescript.png";
+import solidity from "@/assets/solidity.png";
 import supabaselogo from "@/assets/supabase.png";
+import vuejs from "@/assets/vuejs.png";
 
 export const testimonials = [
   {
@@ -320,6 +324,21 @@ export const thumbnails = [
       javascript: javascript,
       typescript: typescript,
       reactjs: reactjs,
+    },
+    category: "Personal",
+  },
+  {
+    id: 32,
+    title: "Smart Ticket",
+    desc: "Blockchain based ticket authentication and verification system",
+    thumbnail: smartTicketThumbnail,
+    github: "https://github.com/Dz-devz/smart-ticket",
+    tools: {
+      javascript: javascript,
+      typescript: typescript,
+      vuejs: vuejs,
+      nestjs: nestjs,
+      solidity: solidity,
     },
     category: "Personal",
   },
